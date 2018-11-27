@@ -34,11 +34,11 @@ import cardProject4 from "assets/img/examples/card-project4.jpg";
 import cardProject5 from "assets/img/examples/card-project5.jpg";
 import cardProject6 from "assets/img/examples/card-project6.jpg";
 
-function MenuItem({ ...props }) {
-  const { classes,name,image,description, ...rest } = props;
+function MenuItem({...props }) {
+  const { classes,name,image,description,children, ...rest } = props;
   return (
 
-          
+
             <GridItem xs={12} sm={6} md={4}>
               <Card
                 raised
@@ -55,6 +55,7 @@ function MenuItem({ ...props }) {
                   <p className={classes.cardDescription}>
                     {description}
                   </p>
+                  {children}
                   <Button round color="danger">
                     <Icon>shopping_cart</Icon> Add To Cart
                   </Button>
