@@ -4,6 +4,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 
 // core components
+import {Link} from "react-router-dom";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
@@ -52,9 +53,9 @@ function HomeCard({ ...props }) {
                 <GridItem xs={12} sm={4} md={4}>
                   <Card plain blog>
                     <CardHeader plain image>
-                      <a href="/order" onClick={e => e.preventDefault()}>
+                      <Link to="/order">
                         <img style={imageContain} src={homeOrder} alt="..." />
-                      </a>
+                      </Link>
                       <div
                         className={classes.coloredShadow}
                         style={{
@@ -73,9 +74,9 @@ function HomeCard({ ...props }) {
                 <GridItem xs={12} sm={4} md={4}>
                   <Card plain blog>
                     <CardHeader plain image>
-                      <a href="/menu" onClick={e => e.preventDefault()}>
+                      <Link to="/menu" >
                         <img style={imageContain} src={homeMenu} alt="..." />
-                      </a>
+                      </Link>
                       <div
                         className={classes.coloredShadow}
                         style={{
@@ -94,9 +95,9 @@ function HomeCard({ ...props }) {
                 <GridItem xs={12} sm={4} md={4}>
                   <Card plain blog>
                     <CardHeader plain image>
-                      <a href="/catering" onClick={e => e.preventDefault()}>
+                      <Link to="/catering" >
                         <img style={imageContain} src={homeCatering} alt="..." />
-                      </a>
+                      </Link>
                       <div
                         className={classes.coloredShadow}
                         style={{

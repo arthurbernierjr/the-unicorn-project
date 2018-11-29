@@ -8,10 +8,13 @@ class Home extends React.Component {
     var href = window.location.href.substring(
       window.location.href.lastIndexOf("#") + 1
     );
-    if (window.location.href.lastIndexOf("#") > 0)
+    if (window.location.href.lastIndexOf("#") > 0){
       document.getElementById(href).scrollIntoView();
     window.addEventListener("scroll", this.updateView);
     this.updateView();
+  } else{
+    this.updateView();
+  }
   }
   componentDidUpdate() {
     var href = window.location.href.substring(

@@ -119,7 +119,7 @@ textAlign: "center"}
         <Link style={listStyleNav} to="/login">
         <span class="fa-layers fa-fw">
           <i className="fas fa-user-circle fa-2x "></i>
-           <span className="fa-layers-counter" >Login</span>
+           <span className="fa-layers-counter" >{" "}</span>
          </span>
          </Link>
         </ListItem>
@@ -127,7 +127,7 @@ textAlign: "center"}
         <Link style={listStyleNav} to="/cart">
         <span class="fa-layers fa-fw">
           <i className="fas fa-shopping-cart fa-2x"></i>
-           <span className="fa-layers-counter" >{cartContents?<span>{cartContents.length}</span>:<span>{'ViewCart'}</span>}</span>
+           <span className="fa-layers-counter" >{cartContents?<span>{cartContents.length}</span>:<span>{' '}</span>}</span>
          </span>
         </Link>
       </ListItem>

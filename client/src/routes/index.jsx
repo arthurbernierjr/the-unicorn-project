@@ -19,7 +19,7 @@ var indexRoutes = [
   { path: "/signup", name: "SignUp", component: SignUp },
   { path: "/signup-thanks", name: "SignUpThanks", component: SignUpThanks },  { path: "/thank-you", name: "Confirm", component: Confirm },
     { path: "/login", name: "Login", component: Login },{ path: "/cart", name: "Cart", component: Cart },
-      { path: "/menu", name: "Menu", component: Menu },
+      { path: "/order", name: "Menu", component: Menu },{ path: "/menu", name: "Menu", component: Menu },
   { path: "/", name: "HomePage", component: HomePage }
 ];
 
